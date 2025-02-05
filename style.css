@@ -116,6 +116,7 @@ body {
     color: #111827;
     line-height: 24px;
     cursor: pointer;
+    margin-top: 3rem;
 }
 .about-button:active {
     transform: scale(0.95);
