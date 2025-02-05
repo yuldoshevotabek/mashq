@@ -18,17 +18,26 @@
             <div class="container">
                 <div class="header-bolish">
                     <div>
-                        <img
-                            class="header-logo"
-                            src="img/logo.svg"
-                            alt="logo"
-                        />
+                        <a href="#">
+                            <img
+                                class="header-logo"
+                                src="img/logo.svg"
+                                alt="logo"
+                        /></a>
                     </div>
                     <div class="header-bolishsh">
-                        <div><p>Найти кандидата</p></div>
-                        <div><p>Попасть в базу</p></div>
-                        <div><p>О сервисе</p></div>
-                        <div><p>Портал</p></div>
+                        <div>
+                            <a href="#about"><p>Найти кандидата</p></a>
+                        </div>
+                        <div>
+                            <a href="#baza"><p>Попасть в базу</p></a>
+                        </div>
+                        <div>
+                            <a href="#input"><p>О сервисе</p></a>
+                        </div>
+                        <div>
+                            <a href="#footer"><p>Портал</p></a>
+                        </div>
                     </div>
                     <div class="header-flex">
                         <div class="header-input">
@@ -43,10 +52,22 @@
                 <hr />
 
                 <div class="header-bolis">
-                    <div><p class="header-para">Маркетологи</p></div>
-                    <div><p class="header-para">Backend-разработчики</p></div>
-                    <div><p class="header-para">Дизайнеры</p></div>
-                    <div><p class="header-para">Менеджеры по продажам</p></div>
+                    <div>
+                        <a href="#"><p class="header-para">Маркетологи</p></a>
+                    </div>
+                    <div>
+                        <a href="#"
+                            ><p class="header-para">Backend-разработчики</p></a
+                        >
+                    </div>
+                    <div>
+                        <a href="#"><p class="header-para">Дизайнеры</p></a>
+                    </div>
+                    <div>
+                        <a href="#"
+                            ><p class="header-para">Менеджеры по продажам</p></a
+                        >
+                    </div>
                     <select
                         name="cut"
                         id="cut"
@@ -63,7 +84,7 @@
         </div>
         <div class="about">
             <div class="container">
-                <div class="about-bolish">
+                <div class="about-bolish" id="about">
                     <div>
                         <div class="about-kotta">
                             <h2 class="about-h2">Нанимайте проверенных</h2>
@@ -163,15 +184,21 @@
                             </p>
                         </div>
                     </div>
-                    <div>
-                        <img src="img/needimg.png" alt="rasm" />
+                    <div class="needcha">
+                        <h2 class="need-h2">Кандидаты по подписке</h2>
+                        <h3 class="need-hash3">4900 ₽ в месяц</h3>
+                        <p class="need-p">В 10-100 раз ниже стоимости любого подбора</p>
+                        <button class="need-tugma">Выбрать кандидата</button>
+                        <h1 class="need-h1">4900</h1>
                     </div>
                 </div>
             </div>
         </div>
         <nav>
             <div class="container">
-                <h3 class="big-title">Как выглядит база кандидатов</h3>
+                <h3 class="big-title" id="baza">
+                    Как выглядит база кандидатов
+                </h3>
                 <div class="big-flex">
                     <div class="big-div">
                         <div class="big-urta">
@@ -276,7 +303,7 @@
         </nav>
         <nav>
             <div class="container">
-                <div class="simple-flex">
+                <div class="simple-flex" id="input">
                     <div>
                         <img src="img/another.png" alt="rasm" />
                     </div>
@@ -290,12 +317,12 @@
                                 по каким сферам у нас появились кандидаты.
                             </p>
                         </div>
-                        <div class="simple-input">
+                        <form class="simple-input" action="boshqarma.php">
                             <input type="text" placeholder="Ваше имя" />
                             <input type="email" placeholder="Email" />
                             <input type="number" placeholder="Номер телефона" />
-                        </div>
-                        <button class="simple-button">Подписаться</button>
+                            <input type="submit" placeholder="Подписаться">
+                        </form>
                     </div>
                 </div>
                 <div class="simple-boshqa">
@@ -309,7 +336,7 @@
         </nav>
         <nav class="futer">
             <div class="container">
-                <div class="footer">
+                <div class="footer" id="footer">
                     <div class="footer-divcha">
                         <h3 class="footer-h3">ЛИЦА.Кандидаты</h3>
                         <a href="#"><p class="footer-p">Найти кандидата</p></a>
@@ -335,12 +362,26 @@
                 </div>
                 <hr class="hrman" />
                 <div class="footer-flex">
-                    <div style="font-size: 16px; color: #111827; font-weight: 400;">
+                    <div
+                        style="
+                            font-size: 16px;
+                            color: #111827;
+                            font-weight: 400;
+                        "
+                    >
                         <p>ООО «ЛИЦА»</p>
                     </div>
-                    <div style="display: flex; gap: 1rem; font-weight: 400; color: #111827; font-size: 16px;">
+                    <div
+                        style="
+                            display: flex;
+                            gap: 1rem;
+                            font-weight: 400;
+                            color: #111827;
+                            font-size: 16px;
+                        "
+                    >
                         <div><p>Реквизиты</p></div>
-                        <hr style="font-weight: 900;">
+                        <hr style="font-weight: 900" />
                         <div><p>Правовая информация</p></div>
                     </div>
                 </div>

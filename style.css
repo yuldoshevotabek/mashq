@@ -7,6 +7,9 @@
 body {
     background-color: #e0e0e0;
 }
+html {
+    scroll-behavior: smooth;
+}
 .container {
     max-width: 1440px;
     padding: 0 1.2rem;
@@ -16,6 +19,12 @@ body {
     display: flex;
     gap: 44px;
     justify-content: space-between;
+    position: fixed;
+    background: #ffffff;
+    left: 0px;
+    right: 0px;
+    z-index: 10000;
+    padding: 0 1.2rem;
 }
 .header-logo {
     width: 178px;
@@ -56,7 +65,11 @@ body {
 .header-bolis {
     display: flex;
     gap: 32px;
+    margin-top: 5.5rem;
     padding: 16px 0;
+}
+.header-para:active {
+    color: blueviolet;
 }
 .header-para {
     height: 24px;
@@ -211,6 +224,65 @@ body {
 .need-oddi {
     width: 683px;
     height: 620px;
+}
+.needcha {
+    width: 521px;
+    height: 740px;
+    border-radius: 16px;
+    background: #F1DF6F;
+    overflow: hidden;
+}
+.need-h2 {
+    width: 451px;
+    margin-left: 40px;
+    height: 49px;
+    margin-top: 58px;
+    font-weight: 400;
+    font-size: 40px;
+    color: #111827;
+}
+.need-hash3 {
+    width: 451px;
+    margin-left: 40px;
+    height: 49px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 40px;
+    color: #111827;
+}
+.need-p {
+    color: #F50F22;
+    font-size: 20px;
+    font-weight: 400;
+    width: 279px;
+    margin-left: 40px;
+    margin-top: 8px;
+    height: 52px;
+}
+.need-tugma {
+    background: #FFFFFF;
+    width: 250px;
+    height: 48px;
+    border-radius: 26px;
+    border: 1px solid #F1DF6F;
+    margin-top: 56px;
+    font-size: 20px;
+    margin-left: 40px;
+    font-weight: 400;
+    color: #111827;
+    padding: 12px 32px;
+}
+.need-h1 {
+    width: 521px;
+    height: 206px;
+    margin-top: 220px;
+    margin-left: 3.2rem;
+    font-size: 206px;
+    font-weight: 700;
+    letter-spacing: -3%;
+    text-align: center;
+    color: #F2F2F2;
+    position: relative;
 }
 .need-h3 {
     width: 522px;
@@ -489,6 +561,7 @@ body {
 }
 a {
     text-decoration: none;
+    color: #000000;
 }
 .hrman {
     margin-top: 32px;
